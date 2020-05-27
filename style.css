@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2,
+a,
+p,
+span {
+  color: #d19779;
+}
+
+.bg-beige {
+  background-color: #fff1e8;
+}
+
+/* /// main /// */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row div {
+  width: 50%;
+}
+
+.spacing {
+  padding: 8vw 0 8vw 0;
+}
+
+/* /// NAV /// */
+
+header {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  padding: 0 8vw 0 8vw;
+}
+
+#links {
+  display: none;
+  float: right;
+  text-align: right;
+  font-weight: 600;
+}
+
+.burgermenu a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.burgermenu a.icon {
+  display: block;
+  position: absolute;
+  right: 8vw;
+  top: 6px;
+  cursor: pointer;
+  font-size: 27px;
+}
+
+.burgermenu a:hover {
+  color: #d19679b4;
+}
+
+/* /// hero section /// */
+
+.hero-image {
+  background-image: url("images/dumplings-bg.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+}
+
+.hero-text h1 {
+  color: white;
+}
+
+/* /// about us intro /// */
+
+#about-us {
+  padding: 0 8vw 0 8vw;
+}
+
+div#about-img {
+  position: relative;
+}
+
+#about-img img {
+  width: 80%;
+  height: auto;
+  float: right;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+}
+
+#overlay * {
+  float: right;
+  display: inline-block;
+  background-color: #d19779;
+  width: 10px;
+  height: 100%;
+  margin: 0px 0px 0px 25px;
+}
+
+/* /// menu /// */
+
+#menu h1 {
+  margin-top: 0;
+}
+
+#menu {
+  padding: 8vw 8vw 8vw 8vw;
+}
+
+#menu ul {
+  list-style-type: none;
+  display: grid;
+}
+
+#menu #dumplings {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#dumplings p {
+  width: 85%;
+}
+
+#menu #drinks {
+  height: 40%;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.menu-item {
+  float: left;
+  font-weight: bold;
+}
+
+.menu-price {
+  float: right;
+  font-weight: bold;
+}
+
+/* //contacts //*/
+
+#contact-info {
+  padding: 0 8vw 0 8vw;
+  background-image: url("images/dumpling-drawing.png");
+  background-position-x: 140%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#socials * {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/* //events //*/
+
+#events {
+  padding: 8vw 8vw 8vw 8vw;
+}
+
+#event-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 50%;
+  font-weight: 500;
+}
+
+#event-container * {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: #d19779;
+  color: white;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+#event-container img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* //footer//*/
+
+footer {
+  height: 100px;
+  margin-left: 8vw;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #event-container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .row div {
+    width: 100%;
+  }
+
+  #about-img img {
+    width: 100%;
+  }
+
+  #event-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #event-container * {
+    width: 75px;
+    height: 75px;
+  }
+
+  #menu #drinks {
+    height: 100%;
+  }
+
+  #dumplings p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .row div {
+    width: 100%;
+  }
+
+  #about-img img {
+    width: 100%;
+  }
+
+  #event-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #event-container * {
+    width: 75px;
+    height: 75px;
+  }
+
+  #menu #drinks {
+    height: 100%;
+  }
+
+  #dumplings p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #event-container * {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #event-container {
+    width: 80%;
+  }
+
+  #event-container * {
+    width: 100px;
+    height: 100px;
+  }
+}
