@@ -196,10 +196,10 @@ div#about-img {
 
 #event-container {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-row-gap: 10px;
   grid-column-gap: 10px;
-  width: 50%;
+  width: 100%;
   font-weight: 500;
 }
 
@@ -229,10 +229,6 @@ footer {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  #event-container {
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
 }
 
 /*Small devices (landscape phones, less than 768px) */
@@ -245,15 +241,6 @@ footer {
     width: 100%;
   }
 
-  #event-container {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  #event-container * {
-    width: 75px;
-    height: 75px;
-  }
-
   #menu #drinks {
     height: 100%;
   }
@@ -264,19 +251,7 @@ footer {
 }
 
 @media (max-width: 991.98px) {
-  #event-container * {
-    width: 75px;
-    height: 75px;
-  }
 }
 
 @media (max-width: 1500px) {
-  #event-container {
-    width: 80%;
-  }
-
-  #event-container * {
-    width: 100px;
-    height: 100px;
-  }
 }
