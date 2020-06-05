@@ -10,6 +10,17 @@ html {
   scroll-behavior: smooth;
 }
 
+text {
+  fill: #d19779;
+  font-size: 30px;
+}
+
+svg p {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  font-weight: 500;
+}
+
 h1,
 h2,
 a,
