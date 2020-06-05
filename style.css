@@ -10,17 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-text {
-  fill: #d19779;
-  font-size: 30px;
-}
-
-svg p {
-  max-width: 500px;
-  margin: 0 auto 1rem;
-  font-weight: 500;
-}
-
 h1,
 h2,
 a,
@@ -111,7 +100,7 @@ header {
 /* /// about us intro /// */
 
 #about-us {
-  padding: 0 8vw 0 8vw;
+  padding: 0 28vw 0 28vw;
 }
 
 div#about-img {
@@ -151,7 +140,7 @@ div#about-img {
 }
 
 #menu {
-  padding: 8vw 8vw 8vw 8vw;
+  padding: 8vw 28vw 8vw 28vw;
 }
 
 #menu ul {
@@ -187,9 +176,9 @@ div#about-img {
 /* //contacts //*/
 
 #contact-info {
-  padding: 0 8vw 0 8vw;
+  padding: 0 28vw 0 28vw;
   background-image: url("images/dumpling-drawing.png");
-  background-position-x: 140%;
+  background-position-x: 60%;
   background-position-y: 50%;
   background-repeat: no-repeat;
 }
@@ -199,10 +188,23 @@ div#about-img {
   padding-right: 10px;
 }
 
+/* //reviews //*/
+
+text {
+  fill: #d19779;
+  font-size: 30px;
+}
+
+svg p {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  font-weight: 500;
+}
+
 /* //events //*/
 
 #events {
-  padding: 8vw 8vw 8vw 8vw;
+  padding: 8vw 28vw 8vw 28vw;
 }
 
 #event-container {
@@ -238,10 +240,6 @@ footer {
   margin-left: 8vw;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-}
-
 /*Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .row div {
@@ -261,8 +259,29 @@ footer {
   }
 }
 
-@media (max-width: 991.98px) {
-}
-
 @media (max-width: 1500px) {
+  header {
+    padding: 0 8vw 0 8vw;
+  }
+
+  #about-us {
+    padding: 0 8vw 0 8vw;
+  }
+
+  #menu {
+    padding: 8vw 8vw 8vw 8vw;
+  }
+
+  #contact-info {
+    padding: 0 8vw 0 8vw;
+    background-position-x: 140%;
+  }
+
+  #events {
+    padding: 8vw 8vw 8vw 8vw;
+  }
+
+  footer {
+    margin-left: 8vw;
+  }
 }
